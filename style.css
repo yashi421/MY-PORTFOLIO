@@ -1,0 +1,166 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+background:#111;
+border-bottom:2px solid #ff4da6;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#ff4da6;
+text-shadow:0 0 15px #ff4da6;
+}
+
+.navbar ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+}
+
+.navbar a:hover{
+color:#ff4da6;
+}
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:80px;
+padding:80px 8%;
+min-height:100vh;
+}
+
+.hero-image img{
+width:350px;
+height:420px;
+object-fit:cover;
+border-radius:25px;
+border:4px solid #ff4da6;
+box-shadow:0 0 30px #ff4da6;
+}
+}
+
+.hero-content h1{
+font-size:65px;
+color:#ff4da6;
+text-shadow:0 0 20px #ff4da6;
+}
+
+.hero-content h2{
+height:40px;
+margin-top:10px;
+}
+
+.hero-content p{
+margin-top:20px;
+color:#ddd;
+line-height:1.8;
+}
+
+.buttons{
+margin-top:25px;
+}
+
+.btn{
+background:#ff4da6;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:30px;
+margin-right:10px;
+display:inline-block;
+}
+
+.btn:hover{
+box-shadow:0 0 20px #ff4da6;
+}
+
+section{
+padding:80px 8%;
+}
+
+section h2{
+color:#ff4da6;
+margin-bottom:25px;
+font-size:40px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skills span{
+padding:12px 20px;
+background:#111;
+border:1px solid #ff4da6;
+border-radius:30px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:15px;
+border:1px solid #ff4da6;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #ff4da6;
+}
+
+.card h3{
+color:#ff4da6;
+margin-bottom:10px;
+}
+
+footer{
+padding:25px;
+text-align:center;
+border-top:2px solid #ff4da6;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:45px;
+}
+
+.hero-image img{
+width:250px;
+height:250px;
+}
+}
